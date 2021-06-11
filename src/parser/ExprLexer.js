@@ -1,0 +1,109 @@
+// Generated from grammar/Expr.g4 by ANTLR 4.9.2
+// jshint ignore: start
+import antlr4 from 'antlr4';
+
+
+
+const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+    "\u5964\u0002\u000f^\b\u0001\u0004\u0002\t\u0002\u0004\u0003\t\u0003",
+    "\u0004\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007",
+    "\t\u0007\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004",
+    "\f\t\f\u0004\r\t\r\u0004\u000e\t\u000e\u0003\u0002\u0003\u0002\u0003",
+    "\u0003\u0003\u0003\u0003\u0003\u0003\u0004\u0003\u0004\u0003\u0005\u0003",
+    "\u0005\u0003\u0006\u0003\u0006\u0003\u0007\u0003\u0007\u0003\b\u0003",
+    "\b\u0003\t\u0003\t\u0003\n\u0006\n0\n\n\r\n\u000e\n1\u0003\n\u0007\n",
+    "5\n\n\f\n\u000e\n8\u000b\n\u0003\u000b\u0003\u000b\u0003\u000b\u0006",
+    "\u000b=\n\u000b\r\u000b\u000e\u000b>\u0005\u000bA\n\u000b\u0003\u000b",
+    "\u0006\u000bD\n\u000b\r\u000b\u000e\u000bE\u0003\u000b\u0003\u000b\u0007",
+    "\u000bJ\n\u000b\f\u000b\u000e\u000bM\u000b\u000b\u0005\u000bO\n\u000b",
+    "\u0003\f\u0005\fR\n\f\u0003\f\u0003\f\u0003\r\u0006\rW\n\r\r\r\u000e",
+    "\rX\u0003\r\u0003\r\u0003\u000e\u0003\u000e\u0002\u0002\u000f\u0003",
+    "\u0003\u0005\u0004\u0007\u0005\t\u0006\u000b\u0007\r\b\u000f\t\u0011",
+    "\n\u0013\u000b\u0015\f\u0017\r\u0019\u000e\u001b\u000f\u0003\u0002\u0007",
+    "\u0005\u0002C\\aac|\u0006\u00022;C\\aac|\u0003\u00022;\u0003\u00023",
+    ";\u0004\u0002\u000b\u000b\"\"\u0002f\u0002\u0003\u0003\u0002\u0002\u0002",
+    "\u0002\u0005\u0003\u0002\u0002\u0002\u0002\u0007\u0003\u0002\u0002\u0002",
+    "\u0002\t\u0003\u0002\u0002\u0002\u0002\u000b\u0003\u0002\u0002\u0002",
+    "\u0002\r\u0003\u0002\u0002\u0002\u0002\u000f\u0003\u0002\u0002\u0002",
+    "\u0002\u0011\u0003\u0002\u0002\u0002\u0002\u0013\u0003\u0002\u0002\u0002",
+    "\u0002\u0015\u0003\u0002\u0002\u0002\u0002\u0017\u0003\u0002\u0002\u0002",
+    "\u0002\u0019\u0003\u0002\u0002\u0002\u0002\u001b\u0003\u0002\u0002\u0002",
+    "\u0003\u001d\u0003\u0002\u0002\u0002\u0005\u001f\u0003\u0002\u0002\u0002",
+    "\u0007\"\u0003\u0002\u0002\u0002\t$\u0003\u0002\u0002\u0002\u000b&\u0003",
+    "\u0002\u0002\u0002\r(\u0003\u0002\u0002\u0002\u000f*\u0003\u0002\u0002",
+    "\u0002\u0011,\u0003\u0002\u0002\u0002\u0013/\u0003\u0002\u0002\u0002",
+    "\u0015N\u0003\u0002\u0002\u0002\u0017Q\u0003\u0002\u0002\u0002\u0019",
+    "V\u0003\u0002\u0002\u0002\u001b\\\u0003\u0002\u0002\u0002\u001d\u001e",
+    "\u0007?\u0002\u0002\u001e\u0004\u0003\u0002\u0002\u0002\u001f \u0007",
+    ",\u0002\u0002 !\u0007,\u0002\u0002!\u0006\u0003\u0002\u0002\u0002\"",
+    "#\u0007,\u0002\u0002#\b\u0003\u0002\u0002\u0002$%\u00071\u0002\u0002",
+    "%\n\u0003\u0002\u0002\u0002&\'\u0007-\u0002\u0002\'\f\u0003\u0002\u0002",
+    "\u0002()\u0007/\u0002\u0002)\u000e\u0003\u0002\u0002\u0002*+\u0007*",
+    "\u0002\u0002+\u0010\u0003\u0002\u0002\u0002,-\u0007+\u0002\u0002-\u0012",
+    "\u0003\u0002\u0002\u0002.0\t\u0002\u0002\u0002/.\u0003\u0002\u0002\u0002",
+    "01\u0003\u0002\u0002\u00021/\u0003\u0002\u0002\u000212\u0003\u0002\u0002",
+    "\u000226\u0003\u0002\u0002\u000235\t\u0003\u0002\u000243\u0003\u0002",
+    "\u0002\u000258\u0003\u0002\u0002\u000264\u0003\u0002\u0002\u000267\u0003",
+    "\u0002\u0002\u00027\u0014\u0003\u0002\u0002\u000286\u0003\u0002\u0002",
+    "\u00029A\t\u0004\u0002\u0002:<\t\u0005\u0002\u0002;=\t\u0004\u0002\u0002",
+    "<;\u0003\u0002\u0002\u0002=>\u0003\u0002\u0002\u0002><\u0003\u0002\u0002",
+    "\u0002>?\u0003\u0002\u0002\u0002?A\u0003\u0002\u0002\u0002@9\u0003\u0002",
+    "\u0002\u0002@:\u0003\u0002\u0002\u0002AO\u0003\u0002\u0002\u0002BD\t",
+    "\u0004\u0002\u0002CB\u0003\u0002\u0002\u0002DE\u0003\u0002\u0002\u0002",
+    "EC\u0003\u0002\u0002\u0002EF\u0003\u0002\u0002\u0002FG\u0003\u0002\u0002",
+    "\u0002GK\u00070\u0002\u0002HJ\t\u0004\u0002\u0002IH\u0003\u0002\u0002",
+    "\u0002JM\u0003\u0002\u0002\u0002KI\u0003\u0002\u0002\u0002KL\u0003\u0002",
+    "\u0002\u0002LO\u0003\u0002\u0002\u0002MK\u0003\u0002\u0002\u0002N@\u0003",
+    "\u0002\u0002\u0002NC\u0003\u0002\u0002\u0002O\u0016\u0003\u0002\u0002",
+    "\u0002PR\u0007\u000f\u0002\u0002QP\u0003\u0002\u0002\u0002QR\u0003\u0002",
+    "\u0002\u0002RS\u0003\u0002\u0002\u0002ST\u0007\f\u0002\u0002T\u0018",
+    "\u0003\u0002\u0002\u0002UW\t\u0006\u0002\u0002VU\u0003\u0002\u0002\u0002",
+    "WX\u0003\u0002\u0002\u0002XV\u0003\u0002\u0002\u0002XY\u0003\u0002\u0002",
+    "\u0002YZ\u0003\u0002\u0002\u0002Z[\b\r\u0002\u0002[\u001a\u0003\u0002",
+    "\u0002\u0002\\]\u000b\u0002\u0002\u0002]\u001c\u0003\u0002\u0002\u0002",
+    "\f\u000216>@EKNQX\u0003\b\u0002\u0002"].join("");
+
+
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
+
+export default class ExprLexer extends antlr4.Lexer {
+
+    static grammarFileName = "Expr.g4";
+    static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+	static modeNames = [ "DEFAULT_MODE" ];
+	static literalNames = [ null, "'='", "'**'", "'*'", "'/'", "'+'", "'-'", 
+                         "'('", "')'" ];
+	static symbolicNames = [ null, null, null, null, null, null, null, null, 
+                          null, "ID", "NUMBER", "NEWLINE", "WS", "ErrorCharacter" ];
+	static ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", 
+                      "T__7", "ID", "NUMBER", "NEWLINE", "WS", "ErrorCharacter" ];
+
+    constructor(input) {
+        super(input)
+        this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
+    }
+
+    get atn() {
+        return atn;
+    }
+}
+
+ExprLexer.EOF = antlr4.Token.EOF;
+ExprLexer.T__0 = 1;
+ExprLexer.T__1 = 2;
+ExprLexer.T__2 = 3;
+ExprLexer.T__3 = 4;
+ExprLexer.T__4 = 5;
+ExprLexer.T__5 = 6;
+ExprLexer.T__6 = 7;
+ExprLexer.T__7 = 8;
+ExprLexer.ID = 9;
+ExprLexer.NUMBER = 10;
+ExprLexer.NEWLINE = 11;
+ExprLexer.WS = 12;
+ExprLexer.ErrorCharacter = 13;
+
+
+

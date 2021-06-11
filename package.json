@@ -1,0 +1,29 @@
+{
+  "name": "antlr-calc",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "antlr": "java -jar \"antlr-4.9.2-complete.jar\" -Dlanguage=JavaScript grammar/Expr.g4 -o src/parser -visitor",
+    "build": "webpack",
+    "serve": "webpack serve",
+    "start": "webpack && node server.js"
+  },
+  "keywords": [
+    "antlr"
+  ],
+  "dependencies": {
+    "antlr4": "^4.9.2",
+    "css-loader": "^5.2.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "author": "",
+  "license": "CC0-1.0",
+  "description": "",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}

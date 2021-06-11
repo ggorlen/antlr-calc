@@ -1,0 +1,39 @@
+body {
+  margin: 1.5em;
+  background: #060606;
+}
+
+* {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.02em;
+  box-sizing: border-box;
+  color: #e7e7e7;
+}
+
+.error {
+  color: #e33;
+}
+
+#expr-container {
+  display: flex;
+}
+
+#expr-errors {
+  color: #e33;
+  margin-top: 0.4em;
+}
+
+#expr-input {
+  height: 270px;
+  width: 200px;
+  background: #222;
+  padding: 0.5em;
+  border: 0px solid transparent;
+}
+
+#expr-results {
+  white-space: nowrap;
+  overflow: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
