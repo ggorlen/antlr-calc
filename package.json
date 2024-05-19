@@ -11,19 +11,19 @@
   "keywords": [
     "antlr"
   ],
+  "author": "ggorlen",
+  "license": "CC0-1.0",
+  "description": "calculator made with antlr",
   "dependencies": {
     "antlr4": "^4.9.2",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
     "css-loader": "^6.5.1",
-    "express": "^4.17.2",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "author": "",
-  "license": "CC0-1.0",
-  "description": "",
-  "devDependencies": {
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
   }
 }
