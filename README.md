@@ -16,7 +16,6 @@ npm run start
 - https://www.codeproject.com/Articles/345888/How-to-write-a-simple-interpreter-in-JavaScript
 - https://stackoverflow.com/questions/54816560/how-to-build-a-javascript-antlr-visitor
 - https://stackoverflow.com/questions/35434932/antlr4-javascript-visitor
-
 - https://medium.com/dailyjs/compiler-in-javascript-using-antlr-9ec53fd2780f
 - https://github.com/jamiebuilds/the-super-tiny-compiler
 - https://www.codeproject.com/Articles/345888/How-to-write-a-simple-interpreter-in-JavaScript
